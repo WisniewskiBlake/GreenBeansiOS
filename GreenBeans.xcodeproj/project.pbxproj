@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		BB22AF9C25D650E300D12288 /* GreenBeansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AF9B25D650E300D12288 /* GreenBeansApp.swift */; };
-		BB22AF9E25D650E300D12288 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AF9D25D650E300D12288 /* ContentView.swift */; };
 		BB22AFA025D650E500D12288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB22AF9F25D650E500D12288 /* Assets.xcassets */; };
 		BB22AFA325D650E500D12288 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB22AFA225D650E500D12288 /* Preview Assets.xcassets */; };
 		BB22AFAE25D650E600D12288 /* GreenBeansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFAD25D650E600D12288 /* GreenBeansTests.swift */; };
 		BB22AFB925D650E600D12288 /* GreenBeansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */; };
+		BB22AFDF25D653CB00D12288 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFDE25D653CB00D12288 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		BB22AF9825D650E300D12288 /* GreenBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB22AF9B25D650E300D12288 /* GreenBeansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBeansApp.swift; sourceTree = "<group>"; };
-		BB22AF9D25D650E300D12288 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB22AF9F25D650E500D12288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB22AFA225D650E500D12288 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BB22AFA425D650E500D12288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		BB22AFB425D650E600D12288 /* GreenBeansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenBeansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBeansUITests.swift; sourceTree = "<group>"; };
 		BB22AFBA25D650E600D12288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB22AFDE25D653CB00D12288 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +95,12 @@
 		BB22AF9A25D650E300D12288 /* GreenBeans */ = {
 			isa = PBXGroup;
 			children = (
+				BB22AFCE25D652BD00D12288 /* Model */,
+				BB22AFCC25D652A700D12288 /* ViewModel */,
+				BB22AFCB25D652A400D12288 /* View */,
+				BB22AFCA25D652A100D12288 /* API */,
+				BB22AFC925D651AE00D12288 /* Utils */,
 				BB22AF9B25D650E300D12288 /* GreenBeansApp.swift */,
-				BB22AF9D25D650E300D12288 /* ContentView.swift */,
 				BB22AF9F25D650E500D12288 /* Assets.xcassets */,
 				BB22AFA425D650E500D12288 /* Info.plist */,
 				BB22AFA125D650E500D12288 /* Preview Content */,
@@ -128,6 +132,50 @@
 				BB22AFBA25D650E600D12288 /* Info.plist */,
 			);
 			path = GreenBeansUITests;
+			sourceTree = "<group>";
+		};
+		BB22AFC925D651AE00D12288 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BB22AFCA25D652A100D12288 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BB22AFCB25D652A400D12288 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFD525D6538B00D12288 /* Main */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB22AFCC25D652A700D12288 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB22AFCE25D652BD00D12288 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB22AFD525D6538B00D12288 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFDE25D653CB00D12288 /* SwiftUIView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB22AF9E25D650E300D12288 /* ContentView.swift in Sources */,
+				BB22AFDF25D653CB00D12288 /* SwiftUIView.swift in Sources */,
 				BB22AF9C25D650E300D12288 /* GreenBeansApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
