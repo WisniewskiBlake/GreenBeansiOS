@@ -12,7 +12,14 @@
 		BB22AFA325D650E500D12288 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB22AFA225D650E500D12288 /* Preview Assets.xcassets */; };
 		BB22AFAE25D650E600D12288 /* GreenBeansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFAD25D650E600D12288 /* GreenBeansTests.swift */; };
 		BB22AFB925D650E600D12288 /* GreenBeansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */; };
-		BB22AFDF25D653CB00D12288 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFDE25D653CB00D12288 /* SwiftUIView.swift */; };
+		BB22AFDF25D653CB00D12288 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFDE25D653CB00D12288 /* ContentView.swift */; };
+		BB22AFF525D65AB900D12288 /* ProductFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFF425D65AB900D12288 /* ProductFeedView.swift */; };
+		BB22AFFD25D65AEC00D12288 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFFC25D65AEC00D12288 /* ProductDetailView.swift */; };
+		BB22B00225D65AF700D12288 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22B00125D65AF700D12288 /* CartView.swift */; };
+		BB22B00725D65B0F00D12288 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22B00625D65B0F00D12288 /* LoginView.swift */; };
+		BB22B00C25D65B3300D12288 /* DeliveryOrPickupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22B00B25D65B3300D12288 /* DeliveryOrPickupView.swift */; };
+		BB22B01125D65B4500D12288 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22B01025D65B4500D12288 /* SettingsView.swift */; };
+		BB22B01625D65B7000D12288 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22B01525D65B7000D12288 /* SearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +51,14 @@
 		BB22AFB425D650E600D12288 /* GreenBeansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenBeansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBeansUITests.swift; sourceTree = "<group>"; };
 		BB22AFBA25D650E600D12288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB22AFDE25D653CB00D12288 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		BB22AFDE25D653CB00D12288 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB22AFF425D65AB900D12288 /* ProductFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFeedView.swift; sourceTree = "<group>"; };
+		BB22AFFC25D65AEC00D12288 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		BB22B00125D65AF700D12288 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		BB22B00625D65B0F00D12288 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BB22B00B25D65B3300D12288 /* DeliveryOrPickupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryOrPickupView.swift; sourceTree = "<group>"; };
+		BB22B01025D65B4500D12288 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BB22B01525D65B7000D12288 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +165,15 @@
 		BB22AFCB25D652A400D12288 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BB22AFEF25D659AF00D12288 /* reusableitems */,
+				BB22AFE925D6582C00D12288 /* Settings */,
+				BB22AFEE25D6599000D12288 /* Authentication */,
+				BB22AFED25D6598700D12288 /* Search */,
+				BB22AFEC25D6595200D12288 /* Cart */,
+				BB22AFEB25D6593B00D12288 /* ProductDetail */,
+				BB22AFEA25D658BF00D12288 /* ProductFeed */,
+				BB22AFE725D657EE00D12288 /* DeliveryOrPickup */,
+				BB22AFE625D6579E00D12288 /* Login */,
 				BB22AFD525D6538B00D12288 /* Main */,
 			);
 			path = View;
@@ -159,6 +182,10 @@
 		BB22AFCC25D652A700D12288 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BB22AFF225D65A2700D12288 /* Settings */,
+				BB22AFF325D65A2E00D12288 /* Cart */,
+				BB22AFF125D659F700D12288 /* ProductFeed */,
+				BB22AFF025D659EC00D12288 /* Authentication */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -173,9 +200,107 @@
 		BB22AFD525D6538B00D12288 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				BB22AFDE25D653CB00D12288 /* SwiftUIView.swift */,
+				BB22AFDE25D653CB00D12288 /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		BB22AFE625D6579E00D12288 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BB22B00625D65B0F00D12288 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BB22AFE725D657EE00D12288 /* DeliveryOrPickup */ = {
+			isa = PBXGroup;
+			children = (
+				BB22B00B25D65B3300D12288 /* DeliveryOrPickupView.swift */,
+			);
+			path = DeliveryOrPickup;
+			sourceTree = "<group>";
+		};
+		BB22AFE925D6582C00D12288 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BB22B01025D65B4500D12288 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BB22AFEA25D658BF00D12288 /* ProductFeed */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFF425D65AB900D12288 /* ProductFeedView.swift */,
+			);
+			path = ProductFeed;
+			sourceTree = "<group>";
+		};
+		BB22AFEB25D6593B00D12288 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFFC25D65AEC00D12288 /* ProductDetailView.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		BB22AFEC25D6595200D12288 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				BB22B00125D65AF700D12288 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		BB22AFED25D6598700D12288 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BB22B01525D65B7000D12288 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BB22AFEE25D6599000D12288 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BB22AFEF25D659AF00D12288 /* reusableitems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = reusableitems;
+			sourceTree = "<group>";
+		};
+		BB22AFF025D659EC00D12288 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BB22AFF125D659F700D12288 /* ProductFeed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductFeed;
+			sourceTree = "<group>";
+		};
+		BB22AFF225D65A2700D12288 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BB22AFF325D65A2E00D12288 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +432,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB22AFDF25D653CB00D12288 /* SwiftUIView.swift in Sources */,
+				BB22B00725D65B0F00D12288 /* LoginView.swift in Sources */,
+				BB22B01625D65B7000D12288 /* SearchView.swift in Sources */,
+				BB22B01125D65B4500D12288 /* SettingsView.swift in Sources */,
+				BB22B00225D65AF700D12288 /* CartView.swift in Sources */,
+				BB22AFDF25D653CB00D12288 /* ContentView.swift in Sources */,
+				BB22AFFD25D65AEC00D12288 /* ProductDetailView.swift in Sources */,
+				BB22AFF525D65AB900D12288 /* ProductFeedView.swift in Sources */,
+				BB22B00C25D65B3300D12288 /* DeliveryOrPickupView.swift in Sources */,
 				BB22AF9C25D650E300D12288 /* GreenBeansApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
