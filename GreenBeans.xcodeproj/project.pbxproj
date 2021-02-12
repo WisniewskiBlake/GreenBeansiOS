@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB22AF9C25D650E300D12288 /* GreenBeansApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AF9B25D650E300D12288 /* GreenBeansApp.swift */; };
+		BB22AF9E25D650E300D12288 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AF9D25D650E300D12288 /* ContentView.swift */; };
+		BB22AFA025D650E500D12288 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB22AF9F25D650E500D12288 /* Assets.xcassets */; };
+		BB22AFA325D650E500D12288 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB22AFA225D650E500D12288 /* Preview Assets.xcassets */; };
+		BB22AFAE25D650E600D12288 /* GreenBeansTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFAD25D650E600D12288 /* GreenBeansTests.swift */; };
+		BB22AFB925D650E600D12288 /* GreenBeansUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB22AFAA25D650E600D12288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB22AF9025D650E300D12288 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB22AF9725D650E300D12288;
+			remoteInfo = GreenBeans;
+		};
+		BB22AFB525D650E600D12288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB22AF9025D650E300D12288 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB22AF9725D650E300D12288;
+			remoteInfo = GreenBeans;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB22AF9825D650E300D12288 /* GreenBeans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenBeans.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB22AF9B25D650E300D12288 /* GreenBeansApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBeansApp.swift; sourceTree = "<group>"; };
+		BB22AF9D25D650E300D12288 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB22AF9F25D650E500D12288 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB22AFA225D650E500D12288 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB22AFA425D650E500D12288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB22AFA925D650E600D12288 /* GreenBeansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenBeansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB22AFAD25D650E600D12288 /* GreenBeansTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBeansTests.swift; sourceTree = "<group>"; };
+		BB22AFAF25D650E600D12288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB22AFB425D650E600D12288 /* GreenBeansUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenBeansUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenBeansUITests.swift; sourceTree = "<group>"; };
+		BB22AFBA25D650E600D12288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB22AF9525D650E300D12288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22AFA625D650E600D12288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22AFB125D650E600D12288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB22AF8F25D650E300D12288 = {
+			isa = PBXGroup;
+			children = (
+				BB22AF9A25D650E300D12288 /* GreenBeans */,
+				BB22AFAC25D650E600D12288 /* GreenBeansTests */,
+				BB22AFB725D650E600D12288 /* GreenBeansUITests */,
+				BB22AF9925D650E300D12288 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB22AF9925D650E300D12288 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AF9825D650E300D12288 /* GreenBeans.app */,
+				BB22AFA925D650E600D12288 /* GreenBeansTests.xctest */,
+				BB22AFB425D650E600D12288 /* GreenBeansUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB22AF9A25D650E300D12288 /* GreenBeans */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AF9B25D650E300D12288 /* GreenBeansApp.swift */,
+				BB22AF9D25D650E300D12288 /* ContentView.swift */,
+				BB22AF9F25D650E500D12288 /* Assets.xcassets */,
+				BB22AFA425D650E500D12288 /* Info.plist */,
+				BB22AFA125D650E500D12288 /* Preview Content */,
+			);
+			path = GreenBeans;
+			sourceTree = "<group>";
+		};
+		BB22AFA125D650E500D12288 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFA225D650E500D12288 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB22AFAC25D650E600D12288 /* GreenBeansTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFAD25D650E600D12288 /* GreenBeansTests.swift */,
+				BB22AFAF25D650E600D12288 /* Info.plist */,
+			);
+			path = GreenBeansTests;
+			sourceTree = "<group>";
+		};
+		BB22AFB725D650E600D12288 /* GreenBeansUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB22AFB825D650E600D12288 /* GreenBeansUITests.swift */,
+				BB22AFBA25D650E600D12288 /* Info.plist */,
+			);
+			path = GreenBeansUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB22AF9725D650E300D12288 /* GreenBeans */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB22AFBD25D650E600D12288 /* Build configuration list for PBXNativeTarget "GreenBeans" */;
+			buildPhases = (
+				BB22AF9425D650E300D12288 /* Sources */,
+				BB22AF9525D650E300D12288 /* Frameworks */,
+				BB22AF9625D650E300D12288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenBeans;
+			productName = GreenBeans;
+			productReference = BB22AF9825D650E300D12288 /* GreenBeans.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB22AFA825D650E600D12288 /* GreenBeansTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB22AFC025D650E600D12288 /* Build configuration list for PBXNativeTarget "GreenBeansTests" */;
+			buildPhases = (
+				BB22AFA525D650E600D12288 /* Sources */,
+				BB22AFA625D650E600D12288 /* Frameworks */,
+				BB22AFA725D650E600D12288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB22AFAB25D650E600D12288 /* PBXTargetDependency */,
+			);
+			name = GreenBeansTests;
+			productName = GreenBeansTests;
+			productReference = BB22AFA925D650E600D12288 /* GreenBeansTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB22AFB325D650E600D12288 /* GreenBeansUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB22AFC325D650E600D12288 /* Build configuration list for PBXNativeTarget "GreenBeansUITests" */;
+			buildPhases = (
+				BB22AFB025D650E600D12288 /* Sources */,
+				BB22AFB125D650E600D12288 /* Frameworks */,
+				BB22AFB225D650E600D12288 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB22AFB625D650E600D12288 /* PBXTargetDependency */,
+			);
+			name = GreenBeansUITests;
+			productName = GreenBeansUITests;
+			productReference = BB22AFB425D650E600D12288 /* GreenBeansUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB22AF9025D650E300D12288 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BB22AF9725D650E300D12288 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BB22AFA825D650E600D12288 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BB22AF9725D650E300D12288;
+					};
+					BB22AFB325D650E600D12288 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BB22AF9725D650E300D12288;
+					};
+				};
+			};
+			buildConfigurationList = BB22AF9325D650E300D12288 /* Build configuration list for PBXProject "GreenBeans" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB22AF8F25D650E300D12288;
+			productRefGroup = BB22AF9925D650E300D12288 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB22AF9725D650E300D12288 /* GreenBeans */,
+				BB22AFA825D650E600D12288 /* GreenBeansTests */,
+				BB22AFB325D650E600D12288 /* GreenBeansUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB22AF9625D650E300D12288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB22AFA325D650E500D12288 /* Preview Assets.xcassets in Resources */,
+				BB22AFA025D650E500D12288 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22AFA725D650E600D12288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22AFB225D650E600D12288 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB22AF9425D650E300D12288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB22AF9E25D650E300D12288 /* ContentView.swift in Sources */,
+				BB22AF9C25D650E300D12288 /* GreenBeansApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22AFA525D650E600D12288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB22AFAE25D650E600D12288 /* GreenBeansTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22AFB025D650E600D12288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB22AFB925D650E600D12288 /* GreenBeansUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB22AFAB25D650E600D12288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB22AF9725D650E300D12288 /* GreenBeans */;
+			targetProxy = BB22AFAA25D650E600D12288 /* PBXContainerItemProxy */;
+		};
+		BB22AFB625D650E600D12288 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB22AF9725D650E300D12288 /* GreenBeans */;
+			targetProxy = BB22AFB525D650E600D12288 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB22AFBB25D650E600D12288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB22AFBC25D650E600D12288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB22AFBE25D650E600D12288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenBeans/Preview Content\"";
+				DEVELOPMENT_TEAM = Z2A427979Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GreenBeans/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blake.GreenBeans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB22AFBF25D650E600D12288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GreenBeans/Preview Content\"";
+				DEVELOPMENT_TEAM = Z2A427979Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GreenBeans/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blake.GreenBeans;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB22AFC125D650E600D12288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2A427979Q;
+				INFOPLIST_FILE = GreenBeansTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blake.GreenBeansTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenBeans.app/GreenBeans";
+			};
+			name = Debug;
+		};
+		BB22AFC225D650E600D12288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2A427979Q;
+				INFOPLIST_FILE = GreenBeansTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blake.GreenBeansTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GreenBeans.app/GreenBeans";
+			};
+			name = Release;
+		};
+		BB22AFC425D650E600D12288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2A427979Q;
+				INFOPLIST_FILE = GreenBeansUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blake.GreenBeansUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenBeans;
+			};
+			name = Debug;
+		};
+		BB22AFC525D650E600D12288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2A427979Q;
+				INFOPLIST_FILE = GreenBeansUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.blake.GreenBeansUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GreenBeans;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB22AF9325D650E300D12288 /* Build configuration list for PBXProject "GreenBeans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB22AFBB25D650E600D12288 /* Debug */,
+				BB22AFBC25D650E600D12288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB22AFBD25D650E600D12288 /* Build configuration list for PBXNativeTarget "GreenBeans" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB22AFBE25D650E600D12288 /* Debug */,
+				BB22AFBF25D650E600D12288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB22AFC025D650E600D12288 /* Build configuration list for PBXNativeTarget "GreenBeansTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB22AFC125D650E600D12288 /* Debug */,
+				BB22AFC225D650E600D12288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB22AFC325D650E600D12288 /* Build configuration list for PBXNativeTarget "GreenBeansUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB22AFC425D650E600D12288 /* Debug */,
+				BB22AFC525D650E600D12288 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB22AF9025D650E300D12288 /* Project object */;
+}
