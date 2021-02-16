@@ -18,7 +18,7 @@ class AuthViewModel: ObservableObject {
     
     init() {
         userSession = Auth.auth().currentUser
-//        fetchUser()
+        fetchUser()
     }
     
     func login(withEmail email: String, password: String) {
@@ -29,15 +29,11 @@ class AuthViewModel: ObservableObject {
             }
             
             self.userSession = result?.user
-//            self.fetchUser()
+            self.fetchUser()
         }
     }
     
     func registerUser(email: String, password: String, fullname: String, address: String) {
-        
-//        guard let imageData = profileImage.jpegData(compressionQuality: 0.3) else { return }
-//        let filename = NSUUID().uuidString
-//        let storageRef = Storage.storage().reference().child(filename)
                 
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
@@ -54,12 +50,36 @@ class AuthViewModel: ObservableObject {
             
             Firestore.firestore().collection("Users").document(email).setData(data) { _ in
                 self.userSession = user
-//                        self.fetchUser()
+                self.fetchUser()
             }
         }
             
         
     }
     
+    func signOut() {
+        userSession = nil
+        user = nil
+        try? Auth.auth().signOut()
+    }
+    
+    func fetchUser() {
+        guard let uid = userSession?.uid else { return }
+        
+        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
+            guard let data = snapshot?.data() else { return }
+            self.user = User(dictionary: data)
+        }
+    }
+    
+    func tabTitle(forIndex index: Int) -> String {
+        switch index {
+        case 0: return "Order"
+        case 1: return "Virtual Store"
+        case 2: return "Cart"
+        case 3: return "Order History"
+        default: return ""
+        }
+    }
     
 }

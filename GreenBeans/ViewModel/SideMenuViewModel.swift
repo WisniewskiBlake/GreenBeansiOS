@@ -27,9 +27,9 @@ enum SideMenuViewModel: Int, CaseIterable {
     var imageName: String {
         switch self {
         case .startOrder: return "person"
-        case .virtualStore: return "list.bullet"
-        case .cart: return "list.bullet"
-        case .orderHistory: return "bookmark"
+        case .virtualStore: return "person"
+        case .cart: return "person"
+        case .orderHistory: return "person"
         case .logout: return "arrow.left.square"
         }
     }
