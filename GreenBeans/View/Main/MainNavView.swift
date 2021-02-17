@@ -19,7 +19,7 @@ struct MainNavView: View {
             } else if selectedIndex == 2 {
                 OrderHistoryView()
             } else if selectedIndex == 3 {
-                
+                SettingsView()
             }
         }
         
