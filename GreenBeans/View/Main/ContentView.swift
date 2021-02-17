@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var showingMenu = false
     @State private var selectedIndex = 0
 //    @State private var showingMenu = false
-        
+                    
     var body: some View {
         Group {
             if viewModel.userSession != nil {
@@ -25,7 +25,7 @@ struct ContentView: View {
                                 .ignoresSafeArea()
                         }
 
-                        StartOrderView()
+                        MainNavView(selectedIndex: $selectedIndex)
                             .cornerRadius(showingMenu ? 20 : 10)
                             .ignoresSafeArea()
                             .navigationBarTitle("Green Beans")

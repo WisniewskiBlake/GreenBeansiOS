@@ -7,21 +7,22 @@
 
 import SwiftUI
 
-struct MainNavView: View {
-    @EnvironmentObject var viewModel: AuthViewModel    
+struct MainNavView: View {        
     @Binding var selectedIndex: Int
-    @Binding var showingMenu: Bool
     
     var body: some View {
-        
-            HStack {
-                
-                
-                
-                
+        VStack {
+            if selectedIndex == 0 {
+                VirtualStoreView()
+            } else if selectedIndex == 1 {
+                CartView()
+            } else if selectedIndex == 2 {
+                OrderHistoryView()
+            } else if selectedIndex == 3 {
                 
             }
-            
+        }
+        
             
         
     }
@@ -29,5 +30,6 @@ struct MainNavView: View {
     
     
 }
+
 
 

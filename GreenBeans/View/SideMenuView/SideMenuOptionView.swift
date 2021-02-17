@@ -12,9 +12,7 @@ struct SideMenuOptionView: View {
     
     var body: some View {
         HStack(spacing: 5) {
-//            Image(systemName: option.imageName)
-//                .foregroundColor(.black)
-//                .font(.system(size: 24))
+
 
             Text(option.description)
                 .foregroundColor(.black)

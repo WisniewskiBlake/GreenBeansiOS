@@ -66,7 +66,7 @@ class AuthViewModel: ObservableObject {
     func fetchUser() {
         guard let uid = userSession?.uid else { return }
         
-        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
+        Firestore.firestore().collection("User").document(uid).getDocument { snapshot, _ in
             guard let data = snapshot?.data() else { return }
             self.user = User(dictionary: data)
         }

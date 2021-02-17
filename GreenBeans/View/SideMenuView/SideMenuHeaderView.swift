@@ -7,8 +7,7 @@
 
 import SwiftUI
 
-struct SideMenuHeaderView: View {
-    private let user = AuthViewModel.shared.user
+struct SideMenuHeaderView: View {    
     @Binding var show: Bool
     
     var body: some View {
@@ -27,12 +26,7 @@ struct SideMenuHeaderView: View {
             }.padding()
             
             VStack(alignment: .leading) {
-//                KFImage(URL(string: user?.profileImageUrl ?? ""))
-//                    .resizable()
-//                    .scaledToFill()
-//                    .clipped()
-//                    .frame(width: 56, height: 56)
-//                    .cornerRadius(28)
+
                 
                 Image(systemName: "xmark")
                     .font(.system(size: 24))
