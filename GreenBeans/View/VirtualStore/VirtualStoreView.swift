@@ -8,32 +8,35 @@
 import SwiftUI
 
 struct VirtualStoreView: View {
+    @ObservedObject var viewModel = VirtualStoreViewModel()
+    
     var body: some View {
         VStack {
             HStack {
-                Button(action: {
-                    print("Tapped")
-                    }, label: {
+                NavigationLink(
+                    destination: FlowerView(viewModel: viewModel),
+                    label: {
                         Text("Flower")
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: 125, height: 100, alignment: .center)
                             .foregroundColor(.white)
                             .background(Color.blue)
                             .cornerRadius(8)
                             .multilineTextAlignment(.center)
-                }).padding(.leading, UIScreen.screenWidth * 0.15)
+                    }).padding(.leading, UIScreen.screenWidth * 0.1)
+
                 
                 Spacer()
                 
-                Button(action: {
-                    print("Tapped")
-                    }, label: {
+                NavigationLink(
+                    destination: ConcentrateView(),
+                    label: {
                         Text("Concentrate")
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: 125, height: 100, alignment: .center)
                             .foregroundColor(.white)
                             .background(Color.blue)
                             .cornerRadius(8)
                             .multilineTextAlignment(.center)
-                })
+                    })
                 
                 Spacer()
                 
@@ -42,33 +45,35 @@ struct VirtualStoreView: View {
             
             
             HStack {
-                Button(action: {
-                    print("Tapped")
-                    }, label: {
+                NavigationLink(
+                    destination: MerchView(),
+                    label: {
                         Text("Merch")
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: 125, height: 100, alignment: .center)
                             .foregroundColor(.white)
                             .background(Color.blue)
                             .cornerRadius(8)
                             .multilineTextAlignment(.center)
-                }).padding(.leading, UIScreen.screenWidth * 0.15)
+                    }).padding(.leading, UIScreen.screenWidth * 0.1)
                 
                 Spacer()
                 
-                Button(action: {
-                    print("")
-                    }, label: {
+                NavigationLink(
+                    destination: EdibleView(),
+                    label: {
                         Text("Edible")
-                            .frame(width: 100, height: 100, alignment: .center)
+                            .frame(width: 125, height: 100, alignment: .center)
                             .foregroundColor(.white)
                             .background(Color.blue)
                             .cornerRadius(8)
                             .multilineTextAlignment(.center)
-                })
+                    })
                 
                 Spacer()
                 
-            }.padding(.top, UIScreen.screenHeight * 0.15)
+            }
+            .padding(.top, UIScreen.screenHeight * 0.05)
+            .padding(.bottom, UIScreen.screenHeight * 0.3)
         }
     }
 }

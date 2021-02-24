@@ -1,0 +1,20 @@
+//
+//  ConcentrateView.swift
+//  GreenBeans
+//
+//  Created by Blake Wisniewski on 12/5/1399 AP.
+//
+
+import SwiftUI
+
+struct ConcentrateView: View {
+    var body: some View {
+        Text("Concentrate View")
+    }
+}
+
+struct ConcentrateView_Previews: PreviewProvider {
+    static var previews: some View {
+        ConcentrateView()
+    }
+}
