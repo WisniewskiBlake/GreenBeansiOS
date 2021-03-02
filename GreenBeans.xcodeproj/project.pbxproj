@@ -52,6 +52,9 @@
 		BB2DBD2525E4E02600BB2EE1 /* EdibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBD2425E4E02600BB2EE1 /* EdibleView.swift */; };
 		BB2DBD2A25E4E03200BB2EE1 /* MerchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBD2925E4E03200BB2EE1 /* MerchView.swift */; };
 		BB2DBD3225E4F41400BB2EE1 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBD3125E4F41400BB2EE1 /* ProductCell.swift */; };
+		BB2DBD3C25E62C6300BB2EE1 /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBD3B25E62C6300BB2EE1 /* ProductDetailViewModel.swift */; };
+		BB2DBD4125E7926200BB2EE1 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBD4025E7926200BB2EE1 /* CartCell.swift */; };
+		BB2DBD4625EC9DFD00BB2EE1 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2DBD4525EC9DFD00BB2EE1 /* CartViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 		BB2DBD2425E4E02600BB2EE1 /* EdibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdibleView.swift; sourceTree = "<group>"; };
 		BB2DBD2925E4E03200BB2EE1 /* MerchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchView.swift; sourceTree = "<group>"; };
 		BB2DBD3125E4F41400BB2EE1 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		BB2DBD3B25E62C6300BB2EE1 /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		BB2DBD4025E7926200BB2EE1 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		BB2DBD4525EC9DFD00BB2EE1 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,9 +260,9 @@
 		BB22AFCC25D652A700D12288 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BB2DBD3A25E62C3F00BB2EE1 /* Product */,
 				BB22AFF225D65A2700D12288 /* Settings */,
 				BB22AFF325D65A2E00D12288 /* Cart */,
-				BB22AFF125D659F700D12288 /* ProductFeed */,
 				BB22AFF025D659EC00D12288 /* Authentication */,
 				BB2DBC8525DA16DA00BB2EE1 /* SideMenuViewModel.swift */,
 				BB2DBD0225DB83C100BB2EE1 /* VirtualStoreViewModel.swift */,
@@ -295,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				BB22B00125D65AF700D12288 /* CartView.swift */,
+				BB2DBD4025E7926200BB2EE1 /* CartCell.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -332,13 +339,6 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		BB22AFF125D659F700D12288 /* ProductFeed */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProductFeed;
-			sourceTree = "<group>";
-		};
 		BB22AFF225D65A2700D12288 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +349,7 @@
 		BB22AFF325D65A2E00D12288 /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				BB2DBD4525EC9DFD00BB2EE1 /* CartViewModel.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -391,6 +392,14 @@
 				BB2DBCA825DA4D9700BB2EE1 /* OrderHistoryView.swift */,
 			);
 			path = OrderHistory;
+			sourceTree = "<group>";
+		};
+		BB2DBD3A25E62C3F00BB2EE1 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BB2DBD3B25E62C6300BB2EE1 /* ProductDetailViewModel.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -536,11 +545,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB2DBC8F25DA1AE100BB2EE1 /* VirtualStoreView.swift in Sources */,
+				BB2DBD4625EC9DFD00BB2EE1 /* CartViewModel.swift in Sources */,
 				BB2DBC4925D8BEBF00BB2EE1 /* CustomSecureField.swift in Sources */,
 				BB2DBC9425DA1B1B00BB2EE1 /* LazyView.swift in Sources */,
+				BB2DBD3C25E62C6300BB2EE1 /* ProductDetailViewModel.swift in Sources */,
 				BB2DBD0325DB83C100BB2EE1 /* VirtualStoreViewModel.swift in Sources */,
 				BB2DBC9E25DA35B400BB2EE1 /* User.swift in Sources */,
 				BB2DBD1025DB965300BB2EE1 /* MainNavView.swift in Sources */,
+				BB2DBD4125E7926200BB2EE1 /* CartCell.swift in Sources */,
 				BB2DBC4425D8BEAC00BB2EE1 /* CustomTextField.swift in Sources */,
 				BB2DBD2025E4E01A00BB2EE1 /* ConcentrateView.swift in Sources */,
 				BB2DBD1B25E4DFFC00BB2EE1 /* FlowerView.swift in Sources */,

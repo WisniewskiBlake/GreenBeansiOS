@@ -7,9 +7,19 @@
 
 import SwiftUI
 
+class Helper: ObservableObject {
+    @Published var quantity :Int = 0
+    
+    func addProductToCart(product: Product) {
+        
+        
+    }
+}
+
 struct ProductDetailView: View {
-    let product: Product
+    var product: Product
     @State private var currentValue = 0
+    @ObservedObject var viewModel = ProductDetailViewModel()
     
     var body: some View {
         VStack(spacing: 20) {
@@ -73,7 +83,13 @@ struct ProductDetailView: View {
                             .font(.system(size: 23, weight: .semibold))
                     })
                 }
-                Button(action: {self.currentValue += 1}, label: {
+                Button(action: {
+//                    ProductDetailViewModel(quantity: $currentValue)
+                    viewModel.addProductToCart(product: product, quantity: currentValue)
+
+                    
+                    
+                }, label: {
                     Text("Add To Cart")
                         .frame(width: UIScreen.screenWidth - 50, height: 45, alignment: .center)
                         .foregroundColor(.white)

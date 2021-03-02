@@ -13,6 +13,7 @@ class AuthViewModel: ObservableObject {
     @Published var isAuthenticating = false
     @Published var error: Error?
     @Published var user: User?
+    
     //variable that allows this viewmodel to be accessed across the whole application, Ex: needed to access current user from anywhere
     static let shared = AuthViewModel()
     

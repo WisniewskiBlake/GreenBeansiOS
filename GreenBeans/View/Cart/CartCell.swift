@@ -1,15 +1,16 @@
 //
-//  ProductCell.swift
+//  CartCell.swift
 //  GreenBeans
 //
-//  Created by Blake Wisniewski on 12/5/1399 AP.
+//  Created by Blake Wisniewski on 12/7/1399 AP.
 //
 
 import SwiftUI
 import Kingfisher
 
-struct ProductCell: View {
+struct CartCell: View {
     var product: Product
+    
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -35,8 +36,6 @@ struct ProductCell: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(.black)
                             
-                        
-
                         Spacer()
                         
                         Text(product.productPrice)
@@ -48,10 +47,13 @@ struct ProductCell: View {
                     Text(product.productDescription)
                         .foregroundColor(.black)
                         .font(.system(size: 12, weight: .regular))
+                        .frame(width: 170, height: .infinity)
+                        .multilineTextAlignment(.leading)
                 }
             }
             .padding(.bottom)
             .padding(.trailing)
+            
             
 //            TweetActionsView(tweet: tweet)
             
@@ -60,3 +62,4 @@ struct ProductCell: View {
         .padding(.leading, -16)
     }
 }
+
